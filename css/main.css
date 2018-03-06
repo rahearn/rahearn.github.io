@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.4;
 }
 
@@ -97,21 +97,75 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+div {
+  box-sizing: border-box;
+}
 
+#profile {
+  min-height: 100vh;
+  padding: 100px 10px;
+  background-image: url('/img/silo_point.jpg');
+  background-size: cover;
+}
 
+#profile-content {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
 
+#profile-head > * {
+  float: left;
+  margin-right: 20px;
+}
 
+#profile-head > img {
+  width: 150px;
+  height: 150px;
+}
 
+#profile-head > div {
+  padding-top: 25px;
+}
+#profile-head > div > * {
+  margin: 0;
+}
 
+@media screen and (max-width: 575px) {
+  #profile-head * {
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 !important;
+    display: block;
+  }
+}
 
+#links {
+  text-align: center;
+}
 
+#links ul {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
 
+#links li {
+  display: inline-block;
+  padding: 0 5px;
+}
 
+#links a {
+  color: #555;
+}
 
-
-
-
-
+#links a:hover {
+  color: #111;
+}
 
 /* ==========================================================================
    Helper classes
